@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 const PageLink = ({ link, itemClass }) => {
   return (
     <li>
-      <a href={link.href} className={itemClass}>
+      <Link to={link.href} className={itemClass}>
         {link.text}
-      </a>
+      </Link>
     </li>
-  );
-};
-export default PageLink;
+  )
+}
+export default PageLink
