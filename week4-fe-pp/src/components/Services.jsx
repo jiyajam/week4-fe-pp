@@ -4,8 +4,13 @@ import Service from './Service'
 import { useState } from 'react';
 
 const Services = () => {
-  const [servicesData, setServicesData] = useState(services);
+  const [servicesData, setServicesData] = useState(services);}
+
+  const handleDeleteItem = (serviceId) => {
+    const updatedItems = (servicesData.filter((item) => item.id !== serviceId));
+    setServicesData(updatedItems); 
   
+
   return (
     <section className='section services' id='services'>
       <Title title='our' subTitle='services' />

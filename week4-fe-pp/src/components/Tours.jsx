@@ -4,7 +4,13 @@ import Tour from './Tour'
 import { useState } from 'react'
 
 const Tours = () => {
-  const [toursData, setToursData] = useState(tours)
+  const [toursData, setToursData] = useState(tours);
+
+    const handleDeleteItem = (tourId) => {
+      const updatedItems = (toursData.filter((item) => item.id !== tourId));
+      setToursData(updatedItems); 
+    };
+    
   return (
     <section className='section' id='tours'>
       <Title title='featured' subTitle='tours' />
