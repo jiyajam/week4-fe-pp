@@ -1,4 +1,6 @@
+// PageLink.jsx
 import { Link } from 'react-router-dom'
+
 const PageLink = ({ link, itemClass }) => {
   return (
     <li>
@@ -8,4 +10,5 @@ const PageLink = ({ link, itemClass }) => {
     </li>
   )
 }
+
 export default PageLink

@@ -1,13 +1,14 @@
-import PageLinks from './PageLinks';
-import SocialLinks from './SocialLinks';
+import { Link } from 'react-router-dom'
+import PageLinks from './PageLinks'
+import SocialLinks from './SocialLinks'
 
 const Navbar = () => {
   return (
     <>
-      <PageLinks parentClass="nav-links" itemClass="nav-link" />
-      <SocialLinks parentClass="nav-icons" itemClass="nav-icon"/>
+      <PageLinks parentClass='nav-links' itemClass='nav-link' />
+      <SocialLinks parentClass='nav-icons' itemClass='nav-icon' />
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

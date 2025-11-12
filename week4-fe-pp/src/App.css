@@ -379,6 +379,7 @@ Featured Tours
 */
 
 .tour-card {
+  overflow: visible !important;
   transition: var(--transition);
   background: var(--clr-grey-10);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -423,9 +424,29 @@ Featured Tours
   font-weight: bold;
 }
 
-.tour-info {
+/* .tour-info {
   padding: 1.25rem 1.5rem;
   text-align: center;
+  gap: 0.5rem;
+} */
+
+.tour-info {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center content horizontally */
+  gap: 0.75rem; /* space between paragraphs and button */
+}
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 2;
 }
 
 /* additional css for different layout*/
@@ -623,7 +644,6 @@ header {
 
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
-
   /* hide nav toggle button */
   .nav-toggle {
     display: none;
@@ -680,7 +700,6 @@ header {
 /* set hero to 
 min-height:calc(100vh - 62px);
 */
-
 
 .section-dummy {
   text-align: center;
