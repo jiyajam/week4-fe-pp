@@ -5,7 +5,6 @@ import { useState } from 'react'
 
 const Services = () => {
   const [servicesData, setServicesData] = useState(services)
-
   const handleDeleteItem = (serviceId) => {
     const updatedItems = servicesData.filter((item) => item.id !== serviceId)
     setServicesData(updatedItems)
